@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6977d30-e252-471b-ac31-3b94b894bcec" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/css/bootstrap-datetimepicker.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/css/style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/js/components/App.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/js/lib/bootstrap-datetimepicker.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/js/lib/bootstrap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/js/lib/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/js/lib/moment-with-locales.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/js/lib/scripts.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/js/helpers/loadlayer.js" afterPath="$PROJECT_DIR$/src/js/helpers/loadlayer.js" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/App.js" afterPath="$PROJECT_DIR$/src/js/components/App.js" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.babel.js" afterPath="$PROJECT_DIR$/webpack.config.babel.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webpack.config.babel.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="webpack.config.babel.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webpack.config.babel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-108">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="227">
+              <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -62,16 +53,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="28" column="51" lean-forward="false" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="loadlayer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/helpers/loadlayer.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -87,8 +68,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/components/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="32" column="30" lean-forward="true" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+            <state relative-caret-position="-126">
+              <caret line="122" column="109" lean-forward="false" selection-start-line="122" selection-start-column="109" selection-end-line="122" selection-end-column="109" />
               <folding />
             </state>
           </provider>
@@ -104,6 +85,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -114,9 +105,10 @@
       <list>
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/src/js/helpers/loadlayer.js" />
-        <option value="$PROJECT_DIR$/src/js/components/App.js" />
         <option value="$PROJECT_DIR$/src/js/lib/scripts.js" />
+        <option value="$PROJECT_DIR$/src/js/components/App.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/webpack.config.babel.js" />
       </list>
     </option>
   </component>
@@ -177,14 +169,13 @@
               <item name="Geomixer-FOTS-Plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="Geomixer-FOTS-Plugin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Geomixer-FOTS-Plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="Geomixer-FOTS-Plugin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -230,16 +221,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518597830595</updated>
-      <workItem from="1518597832772" duration="7412000" />
+      <workItem from="1518597832772" duration="9192000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Markup and Scripts">
+      <created>1518683291952</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1518683291952</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7412000" />
+    <option name="totallyTimeSpent" value="9192000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1922" height="1022" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18081181" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -250,7 +248,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28363228" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28363228" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -267,6 +265,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Markup and Scripts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Markup and Scripts" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -280,26 +282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.babel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/helpers/loadlayer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/lib/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -310,9 +292,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="32" column="30" lean-forward="true" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+        <state relative-caret-position="-126">
+          <caret line="122" column="109" lean-forward="false" selection-start-line="122" selection-start-column="109" selection-end-line="122" selection-end-column="109" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/helpers/loadlayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -329,9 +321,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="51" lean-forward="false" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+        <state relative-caret-position="504">
+          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.babel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

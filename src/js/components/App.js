@@ -25,19 +25,19 @@ class App extends Component {
                         <div class="row">
                             <div class="col-md-6">
                                 <label class="control-label" for="textinput1-1">Широта</label>
-                                <input id="textinput1-1" name="textinput" type="number" placeholder="xx,xx" class="form-control input-md">
-                                    <input id="textinput2-1" name="textinput" type="number" placeholder="xx,xx" class="form-control input-md">
-                                        <input id="textinput3-1" name="textinput" type="number" placeholder="xx,xx" class="form-control input-md">
-                                            <input id="textinput4-1" name="textinput" type="number" placeholder="xx,xx" class="form-control input-md">
-                                                <input id="textinput5-1" name="textinput" type="number" placeholder="xx,xx" class="form-control input-md">
+                                <input id="textinput1-1" name="textinput" type="number" placeholder="xx,xx" class="form-control input-md"/>
+                                    <input id="textinput2-1" name="textinput" type="number" placeholder="xx,xx" class="form-control input-md"/>
+                                        <input id="textinput3-1" name="textinput" type="number" placeholder="xx,xx" class="form-control input-md"/>
+                                            <input id="textinput4-1" name="textinput" type="number" placeholder="xx,xx" class="form-control input-md"/>
+                                                <input id="textinput5-1" name="textinput" type="number" placeholder="xx,xx" class="form-control input-md"/>
                             </div>
                             <div class="col-md-6">
                                 <label class="control-label" for="textinput2-1">Долгота</label>
-                                <input id="textinput1-2" name="textinput" type="number" placeholder="yy,yy" class="form-control input-md">
-                                    <input id="textinput2-2" name="textinput" type="number" placeholder="yy,yy" class="form-control input-md">
-                                        <input id="textinput3-2" name="textinput" type="number" placeholder="yy,yy" class="form-control input-md">
-                                            <input id="textinput4-2" name="textinput" type="number" placeholder="yy,yy" class="form-control input-md">
-                                                <input id="textinput5-2" name="textinput" type="number" placeholder="yy,yy" class="form-control input-md">
+                                <input id="textinput1-2" name="textinput" type="number" placeholder="yy,yy" class="form-control input-md"/>
+                                    <input id="textinput2-2" name="textinput" type="number" placeholder="yy,yy" class="form-control input-md"/>
+                                        <input id="textinput3-2" name="textinput" type="number" placeholder="yy,yy" class="form-control input-md"/>
+                                            <input id="textinput4-2" name="textinput" type="number" placeholder="yy,yy" class="form-control input-md"/>
+                                                <input id="textinput5-2" name="textinput" type="number" placeholder="yy,yy" class="form-control input-md"/>
                             </div>
                         </div>
                         <div class="spacer1"></div>
@@ -67,7 +67,7 @@ class App extends Component {
                                 <label class="control-label" for="time-step">Шаг по времени</label>
                             </div>
                             <div class="col-md-6">
-                                <input id="time-step" name="textinput" type="number" placeholder="часов" class="form-control input-md">
+                                <input id="time-step" name="textinput" type="number" placeholder="часов" class="form-control input-md"/>
                             </div>
                         </div>
                         <div class="spacer1"></div>
@@ -76,7 +76,7 @@ class App extends Component {
                                 <label class="control-label" for="name-zamer">Имя замера</label>
                             </div>
                             <div class="col-md-6">
-                                <input id="name-zamer" name="textinput" type="text" placeholder="мой замер" class="form-control input-md">
+                                <input id="name-zamer" name="textinput" type="text" placeholder="мой замер" class="form-control input-md"/>
                             </div>
                         </div>
                         <div class="row">
@@ -88,19 +88,19 @@ class App extends Component {
                             <div class="col-md-6">
                                 <div class="checkbox">
                                     <label for="checkboxes-1">
-                                        <input type="checkbox" name="checkboxes" id="checkboxes-1" value="1">
+                                        <input type="checkbox" name="checkboxes" id="checkboxes-1" value="1"/>
                                             Option one
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <label for="checkboxes-2">
-                                        <input type="checkbox" name="checkboxes" id="checkboxes-2" value="2">
+                                        <input type="checkbox" name="checkboxes" id="checkboxes-2" value="2"/>
                                             Option two
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <label for="checkboxes-3">
-                                        <input type="checkbox" name="checkboxes" id="checkboxes-3" value="3">
+                                        <input type="checkbox" name="checkboxes" id="checkboxes-3" value="3"/>
                                             Option three
                                     </label>
                                 </div>
@@ -108,19 +108,19 @@ class App extends Component {
                             <div class="col-md-6">
                                 <div class="checkbox">
                                     <label for="checkboxes-4">
-                                        <input type="checkbox" name="checkboxes" id="checkboxes-4" value="4">
+                                        <input type="checkbox" name="checkboxes" id="checkboxes-4" value="4"/>
                                             Option four
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <label for="checkboxes-5">
-                                        <input type="checkbox" name="checkboxes" id="checkboxes-5" value="5">
+                                        <input type="checkbox" name="checkboxes" id="checkboxes-5" value="5"/>
                                             Option five
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <label for="checkboxes-6">
-                                        <input type="checkbox" name="checkboxes" id="checkboxes-6" value="6">
+                                        <input type="checkbox" name="checkboxes" id="checkboxes-6" value="6"/>
                                             Option six
                                     </label>
                                 </div>
