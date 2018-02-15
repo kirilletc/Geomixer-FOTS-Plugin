@@ -31,7 +31,15 @@ export default {
     plugins: [
         HTMLWebpackPluginConfig,
         new CopyWebpackPlugin([
-            { from: path.join(paths.src, 'css/main.css'), to: path.join(paths.public, 'css/main.css') }
+            { from: path.join(paths.src, 'css/main.css'), to: path.join(paths.public, 'css/main.css') },
+            { from: path.join(paths.src, 'css/bootstrap.min.css'), to: path.join(paths.public, 'css/main.css') },
+            { from: path.join(paths.src, 'css/style.css'), to: path.join(paths.public, 'css/main.css') },
+            { from: path.join(paths.src, 'css/bootstrap-datetimepicker.css'), to: path.join(paths.public, 'css/main.css') },
+            { from: path.join(paths.src, 'js/lib/jquery.min.js'), to: path.join(paths.public, 'css/main.css') },
+            { from: path.join(paths.src, 'js/lib/moment-with-locales.js'), to: path.join(paths.public, 'css/main.css') },
+            { from: path.join(paths.src, 'js/lib/bootstrap-datetimepicker.js'), to: path.join(paths.public, 'css/main.css') },
+            { from: path.join(paths.src, 'js/lib/bootstrap.min.js'), to: path.join(paths.public, 'css/main.css') },
+            { from: path.join(paths.src, 'js/lib/scripts.js'), to: path.join(paths.public, 'css/main.css') }
         ])
     ]
 }
