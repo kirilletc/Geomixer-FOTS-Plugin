@@ -1,1 +1,1 @@
-# React boilerplate
+# Geomixer Fots plugin 
