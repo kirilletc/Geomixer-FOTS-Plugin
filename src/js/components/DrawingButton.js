@@ -5,22 +5,33 @@ class DrawingButton extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            active: false
+            active: false,
+            drawing: null
         };
+
+        this.props.lmap.gmxDrawing.on('drawstop', this.ondrawstop);
     }
 
-    onclick = () => {
+    ondrawstop = (e) => {
+        this.setState({
+            active: false,
+            drawing: e.target
+        });
+
+    }
+
+    onclick = (e) => {
         const {lmap} = this.props,
             {active} = this.state;
 
-        console.log(active);
-
         this.setState({
-            active: !active,
-
+            active: !active
         });
 
-        !active && lmap.gmxDrawing.create('Polyline', {/*options*/});
+        if (!active) {
+            let feature = lmap.gmxDrawing.create('Polyline', {maxPoints: 5});
+        }
+
     }
 
     render() {

@@ -5,7 +5,6 @@ import store from '../store'
 import { Provider } from 'react-redux';
 
 function Root(props) {
-    console.log(props);
     return (
         <Provider store={store}>
             <App lmap={props.lmap}/>
