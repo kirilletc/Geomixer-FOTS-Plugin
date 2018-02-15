@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-//import { StylesEditor } from './components/StylesEditor';
+import App from '../components/App';
 
 const nsGmx = window.nsGmx || {};
 
@@ -9,12 +9,14 @@ const nsGmx = window.nsGmx || {};
  */
 const loadLayer = function (gmxMap) {
 
+    console.log(App);
+
     //const layer = gmxMap.layersByID['05D50D053F8A495BB3F59A9AEFE976B8'],
     console.log(gmxMap);
     let obj = gmxMap.toString();
 
     render(
-        <div>obj</div>,
+        <App txt='Hello React' />,
         document.querySelector('.content')
     );
 
