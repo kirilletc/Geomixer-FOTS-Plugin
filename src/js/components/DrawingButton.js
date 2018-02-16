@@ -36,7 +36,7 @@ class DrawingButton extends Component {
 
     render() {
         const {active} = this.state,
-            txt = active ? "Линия рисуется" : "Нарисуйте линию";
+            txt = active ? "Рисуется" : "Нарисуйте";
 
         return (
             <Button
