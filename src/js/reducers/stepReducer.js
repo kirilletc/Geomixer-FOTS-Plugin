@@ -1,4 +1,4 @@
-import { CHANGE_HOURS_STEP, CHANGE_NAME } from '../constants';
+import { CHANGE_HOURS_STEP } from '../constants';
 
 const stepReducer = (step = 2, action) => {
     const {type, payload} = action;

@@ -3,7 +3,11 @@ import { FormControl } from 'react-bootstrap'
 
 const Input = (props) => {
     return (
-        <FormControl onChange={props.onChange} />
+        <FormControl
+            placeholder={props.placeholder}
+            onChange={props.onChange}
+            value={props.value}
+        />
     );
 }
 

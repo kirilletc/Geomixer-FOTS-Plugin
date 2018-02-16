@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import DrawingButton from './DrawingButton';
 import InputContainer from './InputContainer';
+import SourceTab from './SourceTab';
 import Input from './Input';
 
 class App extends Component {
@@ -15,7 +15,8 @@ class App extends Component {
     render() {
         return (
             <div>
-                <DrawingButton lmap={this.props.lmap}/>
+                <h2>Введите ккоординаты</h2>
+                <SourceTab lmap={this.props.lmap} />
                 <InputContainer param="step" label="Шаг по времени"/>
                 <InputContainer param="name" label="Имя замера"/>
             </div>
