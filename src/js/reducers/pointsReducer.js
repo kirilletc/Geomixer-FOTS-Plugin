@@ -5,11 +5,15 @@ const pointsReducer = (points = [], action) => {
 
     switch (action.type) {
         case ADD_POINT:
-            points = [...points].concat(payload.point);
+            if (points.length < 5) {
+                points = [...points].concat(payload.point);
+            }
             break;
         case EDIT_POINT:
-            const {id, type} = payload;
+            const { id, coordType, value } = payload;
             const editingPoint = points.find(point => point.id === id);
+
+            editingPoint[coordType] = value;
 
             points = [
                 ...points.slice(0, id),

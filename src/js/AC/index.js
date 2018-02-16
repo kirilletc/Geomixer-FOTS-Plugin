@@ -35,9 +35,9 @@ export function replacePoints(points) {
     }
 }
 
-export function editPoint(id, type) {
+export function editPoint(id, coordType, value) {
     return {
         type: EDIT_POINT,
-        payload: { id, type }
+        payload: { id, coordType, value }
     }
 }

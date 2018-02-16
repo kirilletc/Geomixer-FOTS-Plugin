@@ -15,7 +15,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <h2>Введите ккоординаты</h2>
+                <h2>Введите координаты</h2>
                 <SourceTab lmap={this.props.lmap} />
                 <InputContainer param="step" label="Шаг по времени"/>
                 <InputContainer param="name" label="Имя замера"/>

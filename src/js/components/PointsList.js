@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import Input from './Input';
 import { editPoint } from '../AC';
@@ -32,8 +31,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        onChange: (e, id, type) => {
-            dispatch(editPoint(id, type));
+        onChange: (e, id, coordType) => {
+            dispatch(editPoint(id, coordType, Number(e.target.value)));
         }
     }
 }

@@ -1,21 +1,17 @@
-import React, { Component } from 'react';
-import { ControlLabel } from 'react-bootstrap'
+import React from 'react';
+import { ControlLabel } from 'react-bootstrap';
 
-export const withLabel = (InnerComponent) => {
-    return class WithLabel extends Component {
-        constructor(props) {
-            super(props);
-        }
+export const withLabel = InnerComponent => {
+    return (props) => {
+        const { label, value, onChange } = props;
 
-        render() {
-            return (
-                <div>
-                    <ControlLabel>
-                        {this.props.label}
-                    </ControlLabel>
-                    <InnerComponent onChange={this.props.onChange}/>
-                </div>
-            );
-        }
+        return (
+            <div>
+                <ControlLabel>
+                    {label}
+                </ControlLabel>
+                <InnerComponent onChange={onChange} value={value}/>
+            </div>
+        );
     }
 }

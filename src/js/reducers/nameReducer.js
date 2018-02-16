@@ -1,6 +1,6 @@
 import { CHANGE_NAME } from '../constants';
 
-const nameReducer = (name = '', action) => {
+const nameReducer = (name = 'test', action) => {
     const {type, payload} = action;
 
     switch (action.type) {

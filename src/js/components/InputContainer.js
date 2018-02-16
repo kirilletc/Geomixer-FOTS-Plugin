@@ -5,9 +5,11 @@ import { withLabel } from '../HOC';
 import { changeHoursStep, changeName } from '../AC';
 
 const mapStateToProps = (state, ownProps) => {
-    return {
-        label: ownProps.label
-    }
+    const { step, name } = state;
+    const { label, param } = ownProps;
+    const value = param === 'step' ? step : name;
+
+    return { label, value };
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
@@ -15,7 +17,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 
     return {
         onChange: e => {
-            dispatch(dispatchFunc(e.target.value))
+            const value = ownProps.param === 'step' ? Number(e.target.value) : e.target.value;
+            dispatch(dispatchFunc(value));
         }
     }
 }
