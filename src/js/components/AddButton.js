@@ -13,16 +13,21 @@ const AddButton = (props) => {
 
 const mapStateToProps = (state, ownProps) => {
     return {
+        points: state.points,
         label: ownProps.label
     }
 }
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mergeProps = (stateProps, dispatchProps) => {
+    const { points } = stateProps;
+    const { dispatch } = dispatchProps;
+    const index = points.length;
+
     return {
         onClick: e => {
-            dispatch(addPoint({x: null, y: null}))
+            dispatch(addPoint({id: index, x: null, y: null}))
         }
-    }
-}
+    };
+};
 
-export default connect(mapStateToProps, mapDispatchToProps)(AddButton);
+export default connect(mapStateToProps, null, mergeProps)(AddButton);

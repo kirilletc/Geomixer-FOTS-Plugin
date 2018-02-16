@@ -2,20 +2,24 @@ import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import Input from './Input';
+import { editPoint } from '../AC';
 
-const PointsList = (props) => {
-    const points = props.points.map(point => {
+const PointsList = ({onChange, points}) => {
+    const list = points.map(point => {
+        const xValue = point.x || '';
+        const yValue = point.y || '';
+
         return (
-            <div key={point.x ? point.x : Math.random()*100}>
-                <Input placeholder="x:" value={point.x} />
-                <Input placeholder="y:" value={point.y} />
+            <div key={point.id}>
+                <Input placeholder="x:" value={xValue} onChange={(e) => {onChange(e, point.id, 'x')}} />
+                <Input placeholder="y:" value={yValue} onChange={(e) => {onChange(e, point.id, 'y')}} />
             </div>
         )
     })
 
     return (
         <div>
-            {points}
+            {list}
         </div>
     )
 }
@@ -26,4 +30,12 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps)(PointsList);
+const mapDispatchToProps = (dispatch, ownProps) => {
+    return {
+        onChange: (e, id, type) => {
+            dispatch(editPoint(id, type));
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(PointsList);
