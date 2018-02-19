@@ -6,3 +6,6 @@ export const REPLACE_POINTS = 'REPLACE_POINTS';
 export const COUNT_WIND = 'COUNT_WIND';
 export const REVERSE_CALC = 'REVERSE_CALC';
 export const COUNT_CURRENTS = 'COUNT_CURRENTS';
+export const PERMANENT_SOURCE = 'PERMANENT_SOURCE';
+export const IS_OIL = 'IS_OIL';
+export const BUILD_IMAGES = 'BUILD_IMAGES';

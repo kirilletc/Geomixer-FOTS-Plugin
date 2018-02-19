@@ -12,12 +12,10 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
     const { param } = ownProps;
     const dispatchFunc = actionCreators[param];
-    console.log(dispatchFunc);
 
     return {
         onChange: e => {
             const value = e.target.checked;
-            console.log(value);
             dispatch(dispatchFunc(value));
         }
     }

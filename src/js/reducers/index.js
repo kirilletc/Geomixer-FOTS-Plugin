@@ -5,6 +5,9 @@ import windReducer from './windReducer';
 import pointsReducer from './pointsReducer';
 import reverseCalcReducer from './reverseCalcReducer';
 import currentsReducer from './currentsReducer';
+import permanentSourceReducer from './permanentSourceReducer';
+import isOilReducer from './isOilReducer';
+import buildImagesReducer from './buildImagesReducer';
 
 export default combineReducers({
     step: stepReducer,
@@ -12,5 +15,8 @@ export default combineReducers({
     points: pointsReducer,
     countWind: windReducer,
     reverseCalc: reverseCalcReducer,
-    countCurrents: currentsReducer
+    countCurrents: currentsReducer,
+    permanentSource: permanentSourceReducer,
+    isOil: isOilReducer,
+    buildImages: buildImagesReducer
 });

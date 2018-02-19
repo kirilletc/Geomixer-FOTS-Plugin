@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import InputContainer from './InputContainer';
 import CheckboxContainer from './CheckboxContainer';
 import SourceTab from './SourceTab';
-import Input from './Input';
 
 class App extends Component {
     constructor(props) {
@@ -23,6 +22,9 @@ class App extends Component {
                 <CheckboxContainer param="countWind" label="Учитывать ветер" />
                 <CheckboxContainer param="reverseCalc" label="Обратный расчет" />
                 <CheckboxContainer param="countCurrents" label="Учитывать геострофические течения" />
+                <CheckboxContainer param="permanentSource" label="Постоянный источник" />
+                <CheckboxContainer param="isOil" label="Нефть" />
+                <CheckboxContainer param="buildImages" label="Построить изображения" />
             </div>
         );
     }

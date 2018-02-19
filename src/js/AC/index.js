@@ -6,7 +6,10 @@ import {
     REPLACE_POINTS,
     COUNT_WIND,
     REVERSE_CALC,
-    COUNT_CURRENTS
+    COUNT_CURRENTS,
+    PERMANENT_SOURCE,
+    IS_OIL,
+    BUILD_IMAGES
 } from '../constants';
 
 
@@ -62,6 +65,27 @@ export function reverseCalc(value) {
 export function countCurrents(value) {
     return {
         type: COUNT_CURRENTS,
+        payload: { value }
+    }
+}
+
+export function permanentSource(value) {
+    return {
+        type: PERMANENT_SOURCE,
+        payload: { value }
+    }
+}
+
+export function isOil(value) {
+    return {
+        type: IS_OIL,
+        payload: { value }
+    }
+}
+
+export function buildImages(value) {
+    return {
+        type: BUILD_IMAGES,
         payload: { value }
     }
 }
