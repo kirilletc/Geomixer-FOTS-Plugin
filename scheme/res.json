@@ -1,0 +1,31 @@
+{
+    "main": {
+        "regionName": "BlackSea",
+        "startCoordinates": [
+            [
+                40,
+                43
+            ]
+        ],
+        "beginDate": "2017-10-10T01:01:00Z",
+        "endDate": "2017-10-11T01:02:00Z",
+        "timeStep": 3,
+        "windDriftCoeff": 0.03,
+        "driftCurrentsRotationAngle": 13,
+        "turbulentExchangeCoeff": 0.05,
+        "experimentName": "Alessia",
+        "doBackwardCalculation": 1,
+        "withDriftCurrents": 1,
+        "withGeostrophicCurrents": 1,
+        "useContinuousSource": 0,
+        "plotImages": 0,
+        "displayImages": 0
+    },
+    "oil_spot": {
+        "isOil": 1,
+        "weight": 4,
+        "oilType": 0,
+        "durationOfTheSpill": 0,
+        "oilCondition": 0
+    }
+}

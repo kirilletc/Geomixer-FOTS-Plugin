@@ -1,0 +1,176 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Формат JSON сообщения, содержащего входные параметры для работы программы FOTS",
+  "title": "FOTS input parameters",
+  "type": "object",
+  "required": ["main", "oil_spot"],
+  "properties": {
+    "workingDir": {"type": "string", "maxLength": 256, "description": "Внешняя рабочая директория. Нужный параметр.",
+      "default": ""},
+    "main": {
+      "description": "Основной блок входных параметров",
+      "type": "object",
+      "required": ["regionName", "startCoordinates", "beginDate", "endDate"],
+      "properties": {
+        "regionName": {"type": "string", "minLength": 1, "maxLength":  40, "description": "Region"},
+        "startCoordinates": {"type": "array", "minItems": 1, "maxItems": 5,
+          "description": "Начальные координаты расчета.",
+          "items": [
+            {
+              "type": "array", "minItems": 2, "maxItems": 2,
+              "description": "Координатная пара: долгота и широта",
+              "items": [
+                {
+                  "type": "number", "minimum": -360, "maximum": 360, "default": 0.0,
+                  "title": "x0", "description": "Starting longitude"
+                },
+                {
+                  "type": "number", "minimum": -90, "maximum": 90, "default": 0.0,
+                  "title": "y0", "description": "Starting latitude"
+                }
+              ]
+            },
+            {
+              "type": "array", "minItems": 2, "maxItems": 2,
+              "description": "Координатная пара: долгота и широта",
+              "items": [
+                {
+                  "type": "number", "minimum": -360, "maximum": 360, "default": 0.0,
+                  "title": "x0", "description": "Starting longitude"
+                },
+                {
+                  "type": "number", "minimum": -90, "maximum": 90, "default": 0.0,
+                  "title": "y0", "description": "Starting latitude"
+                }
+              ]
+            },
+            {
+              "type": "array", "minItems": 2, "maxItems": 2,
+              "description": "Координатная пара: долгота и широта",
+              "items": [
+                {
+                  "type": "number", "minimum": -360, "maximum": 360, "default": 0.0,
+                  "title": "x0", "description": "Starting longitude"
+                },
+                {
+                  "type": "number", "minimum": -90, "maximum": 90, "default": 0.0,
+                  "title": "y0", "description": "Starting latitude"
+                }
+              ]
+            },
+            {
+              "type": "array", "minItems": 2, "maxItems": 2,
+              "description": "Координатная пара: долгота и широта",
+              "items": [
+                {
+                  "type": "number", "minimum": -360, "maximum": 360, "default": 0.0,
+                  "title": "x0", "description": "Starting longitude"
+                },
+                {
+                  "type": "number", "minimum": -90, "maximum": 90, "default": 0.0,
+                  "title": "y0", "description": "Starting latitude"
+                }
+              ]
+            },
+            {
+              "type": "array", "minItems": 2, "maxItems": 2,
+              "description": "Координатная пара: долгота и широта",
+              "items": [
+                {
+                  "type": "number", "minimum": -360, "maximum": 360, "default": 0.0,
+                  "title": "x0", "description": "Starting longitude"
+                },
+                {
+                  "type": "number", "minimum": -90, "maximum": 90, "default": 0.0,
+                  "title": "y0", "description": "Starting latitude"
+                }
+              ]
+            }
+          ]
+        },
+        "beginDate": {"type": "string", "format": "date-time", "description": "Начальные дата и время расчета.RFC3339",
+          "title": "d0", "default": "2012-02-12T06:00:00Z"},
+        "endDate": {"type": "string", "format": "date-time", "description": "Конечные дата и время расчета.RFC3339",
+          "title": "de", "default": "2012-02-15T00-00-00Z"},
+        "timeStep": {"type": "number", "minimum": 0.0, "maximum": 500.0, "description":
+        "Шаг расчетов по времени(в часах)", "title": "dd", "default": 0.2},
+        "windDriftCoeff": {"type": "number", "minimum": 0.0, "maximum": 1.0, "description":
+        "Коэффициент ветрового дрейфа", "title": "KD", "default": 0.06},
+        "driftCurrentsRotationAngle": {"type": "number", "minimum": 0, "maximum": 360, "description":
+        "Угол между дрейфовым течением и ветром", "title": "dt", "default": 13},
+        "turbulentExchangeCoeff": {"type": "number", "minimum": 0.0, "maximum": 1.0, "description":
+        "коэффициент турбулентного обмена", "title": "ll", "default": 0.2},
+        "experimentName": {"type": "string", "minLength": 1, "maxLength": 40, "description":
+        "Название эксперимента. Необходимость данного поля под вопросом", "title": "NE", "default": "5"},
+        "doBackwardCalculation": {"type": "number", "enum": [-1, 1], "description": "Обратный расчет", "title": "zz",
+          "default": 1},
+        "withDriftCurrents": {"type": "number", "enum": [0,1], "description": "Учитывать дрейфовые течения",
+          "default": 1},
+        "withGeostrophicCurrents": {"type": "number", "enum": [0,1], "description": "Учитывать геострофические течения",
+          "default": 1},
+        "useContinuousSource": {"type": "number", "enum": [0,1],
+          "description": "Выбор расчета для мгновенного(instant source) или для постоянного источника(contiuous source",
+          "default": 1},
+        "plotImages": {"type": "number", "enum": [0,1], "description":
+        "Создание карт по текущим параметрам. Необходимость данного поля под вопросом", "default": 1},
+        "displayImages": {"type": "number", "enum": [0,1], "description":
+        "Вывод изображений на экран. Необходимость данного поля под вопросом", "default": 0}
+      }
+    },
+    "oil_spot": {
+      "description": "Задание параметров нефтяных загрязнений",
+      "type": "object",
+      "if": {"isOil": {"const": 1}},
+        "then": {"required": ["isOil", "weight", "oilType", "DurationOfTheSpill", "oilCondition"]},
+        "else": {"required": ["isOil"]},
+      "properties": {
+        "isOil": {"type": "number", "enum": [0,1], "description": "Плавающий объект является нефтяным пятном",
+          "default": 1},
+        "weight": {"type": "number", "minimum": 0.0, "maximum": 1.0e+9,
+          "description": "Начальная масса загрязнения в тоннах", "default": 10},
+        "oilType": {"type": "number", "enum": [0, 1, 2], "description": "тип разлитой нефти", "default": 1},
+        "durationOfTheSpill": {"type": "number", "minimum": 0, "maximum": 1000,
+          "description": "Время (продолжительность) разлива нефти", "default": 0},
+        "oilCondition": {"type": "number", "enum": [0, 1],
+          "description": "Состояние нефти (свежая или выветренная", "default": 0}
+      }
+    },
+    "region": {
+      "description": "Параметры для создания нового региона. Необходимость данного блока под вопросом",
+      "type": "object",
+      "required": ["regionName"],
+      "properties": {
+        "regionName": {"type": "string", "minLength": 1, "maxLength":  40,
+          "description": "Название исследуемого региона", "default": ""},
+        "setCoordinates": {"type": "array", "minItems": 2, "maxItems": 2,
+          "description": "Минимальные и максимальные координаты региона.",
+          "items": [
+            {
+              "type": "array", "minItems": 2, "maxItems": 2,
+              "description": "Координатная пара: долгота и широта",
+              "items": [
+                {
+                  "type": "number", "minimum": -360, "maximum": 360, "default": 0.0
+                },
+                {
+                  "type": "number", "minimum": -90, "maximum": 90, "default": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        "mdte": {"type": "string", "minLength": 1, "maxLength": 40,
+          "description": "Средняя динамическая топография (СДТ) региона", "default": "none"},
+        "regData": {"type": "string", "enum": ["0", "blacksea", "mfstep"],
+          "description": "Используемый массив альтиметрических данных", "default": "0"},
+        "withIce": {"type": "number", "enum": [0,1], "description": "Флаг для учета ледовой обстановки в регионе",
+          "default": 0},
+        "coast": {"type": "string", "minLength": 1, "maxLength": 40, "description": "Выбор береговой линии", "default": "default"}
+
+      }
+    }
+  }
+}
+
+
+
