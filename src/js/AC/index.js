@@ -9,7 +9,16 @@ import {
     COUNT_CURRENTS,
     PERMANENT_SOURCE,
     IS_OIL,
-    BUILD_IMAGES
+    OIL_TYPE,
+    WEIGHT,
+    SPILL_DURATION,
+    CONDITION,
+    BUILD_IMAGES,
+    WIND_DRIFT,
+    DRIFT_ANGLE,
+    TURBULENTION,
+    BEGIN_DATE,
+    END_DATE
 } from '../constants';
 
 
@@ -86,6 +95,69 @@ export function isOil(value) {
 export function buildImages(value) {
     return {
         type: BUILD_IMAGES,
+        payload: { value }
+    }
+}
+
+export function changeOilType(value) {
+    return {
+        type: OIL_TYPE,
+        payload: { value }
+    }
+}
+
+export function changeOilWeight(value) {
+    return {
+        type: WEIGHT,
+        payload: { value }
+    }
+}
+
+export function changeOilSpillDuration(value) {
+    return {
+        type: SPILL_DURATION,
+        payload: { value }
+    }
+}
+
+export function changeOilCondition(value) {
+    return {
+        type: CONDITION,
+        payload: { value }
+    }
+}
+
+export function changeWindDriftCoeff(value) {
+    return {
+        type: WIND_DRIFT,
+        payload: { value }
+    }
+}
+
+export function changeDriftCurrentsRotationAngle(value) {
+    return {
+        type: DRIFT_ANGLE,
+        payload: { value }
+    }
+}
+
+export function changeTurbCoeff(value) {
+    return {
+        type: TURBULENTION,
+        payload: { value }
+    }
+}
+
+export function changeBeginDate(value) {
+    return {
+        type: BEGIN_DATE,
+        payload: { value }
+    }
+}
+
+export function changeEndDate(value) {
+    return {
+        type: END_DATE,
         payload: { value }
     }
 }

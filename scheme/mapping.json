@@ -1,0 +1,24 @@
+{
+    "startCoordinates": "points",
+    "timeStep": "step",
+    "experimentName": "name",
+    "useContinuousSource": "permanentSource",
+    "plotImages": "buildImages",
+    "withGeostrophicCurrents": "countCurrents",
+    "doBackwardCalculation": "reverseCalc",
+    "isOil": "isOil",
+    "oil": {
+        "oilType": "oilType",
+        "weight": "weight",
+        "durationOfTheSpill": "spillDuraion",
+        "oilCondition": "condition"
+    },
+    "windDriftCoeff": "windDriftCoeff",
+    "driftCurrentsRotationAngle": "driftCurrentsRotationAngle",
+    "turbulentExchangeCoeff": "turbulentExchangeCoeff",
+    "beginDate": "beginDate",
+    "endDate": "endDate",
+
+    "withDriftCurrents": "",
+    "displayImages": 0,
+}
